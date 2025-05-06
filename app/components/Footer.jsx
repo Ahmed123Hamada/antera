@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Social Links */}
           <div>
-            <h2 className="text-2xl font-bold text-primary mb-4"> شباب قبيلة عنترة الرسمية</h2>
+            <h2 className="text-2xl font-bold text-primary mb-4"> شباب قبيلة عنزة الرسمية</h2>
             <p className="text-gray-400 mb-6">
               وجهتك المثالية للاحتفالات والمناسبات في جدة
             </p>
@@ -85,7 +85,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
           <p>
-            © {new Date().getFullYear()} قبيلة عنترة. جميع الحقوق محفوظة.
+            © {new Date().getFullYear()} قبيلة عنزة. جميع الحقوق محفوظة.
           </p>
         </div>
       </div>

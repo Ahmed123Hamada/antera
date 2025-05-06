@@ -172,7 +172,7 @@ export default function Home() {
           className="relative z-10 text-center px-6 max-w-3xl mx-auto"
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">
-            أفراح شباب قبيلة عنترة الرسمية
+            أفراح شباب قبيلة عنزة  الرسمية
           </h1>
           <p className="text-xl md:text-3xl mb-10 font-light">
             المكان المثالي لحفل زفافك
@@ -202,7 +202,7 @@ export default function Home() {
             animate={featuresTitleControls}
             className="text-center"
           >
-            <h2 className="text-4xl font-bold mb-6">مميزات أفراح شباب قبيلة عنترة الرسمية</h2>
+            <h2 className="text-4xl font-bold mb-6">مميزات أفراح شباب قبيلة عنزة  الرسمية</h2>
             <span className="block w-24 h-1 mx-auto my-4 bg-black"></span>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -237,7 +237,7 @@ export default function Home() {
           className="text-4xl font-bold text-center mb-6"
           style={{ color: 'var(--primary)' }}
         >
-          صور افراح شباب قبيلة عنترة الرسمية
+          صور افراح شباب قبيلة عنزة الرسمية
         </motion.h2>
         <span className="block w-24 h-1 mx-auto my-4 bg-black"></span>
         <div className="grid grid-cols-1 sm:grid-12 md:grid-cols- gap-12">

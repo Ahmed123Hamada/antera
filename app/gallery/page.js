@@ -187,7 +187,7 @@ export default function Gallery() {
           className="text-5xl md:text-6xl font-bold tracking-tight drop-shadow-lg"
           style={{ color: 'var(--primary)' }}
         >
-          زفاف شباب قبيلة عنترة الرسمية
+          زفاف شباب قبيلة عنزة الرسمية
         </h1>
         <span className="block w-24 h-1 mx-auto my-4 bg-black"></span>
       </div>

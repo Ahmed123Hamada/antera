@@ -4,14 +4,13 @@ import Header from '../components/Header';
 export default function About() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: 'var(--background)', color: 'var(--text)', fontFamily: 'Tajawal, Arial, Helvetica, sans-serif' }}>
-      <Header />
       
       {/* Hero Section */}
       <section className="relative h-64 flex items-center justify-center" style={{ background: 'var(--gradient)' }}>
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero.jpg"
-            alt="عن قبيلة عنترة"
+            alt="عن قبيلة عنزة"
             fill
             className="object-cover"
           />
@@ -27,7 +26,7 @@ export default function About() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="mb-12">
-              <h2 className="text-3xl font-bold mb-6" style={{ color: 'var(--gold)' }}>قاعة قبيلة عنترة</h2>
+              <h2 className="text-3xl font-bold mb-6" style={{ color: 'var(--gold)' }}>قاعة قبيلة عنزة</h2>
               <p className="mb-4" style={{ color: '#7c7c7c' }}>
                 قاعة قبيلة عنترة هي وجهة العرسان الذين يبحثون عن مكان مميز لحفل زفافهم. نحن نقدم تجربة فريدة تجمع بين الأصالة والحداثة، مع الحفاظ على التقاليد العربية الأصيلة.
               </p>
