@@ -309,7 +309,7 @@ export default function Home() {
         </Link>
       </div>
 
-      {/* Contact Section */}
+      {/* Contact Section xa */}
       <Contact />
     </main>
   );
