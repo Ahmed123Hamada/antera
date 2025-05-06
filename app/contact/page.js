@@ -113,7 +113,7 @@ export default function Contact() {
         <motion.div ref={titleRef} initial={animationVariants.initial} animate={titleControls}>
           <h2
             className="text-4xl sm:text-5xl text-center mb-12 font-bold tracking-tight"
-            style={{ color: 'var(--primary)',fontFamily: 'Home' }}
+            style={{ color: 'var(--primary)',fontFamily: 'Home', fontWeight: 'bold' }}
           >
             تواصل معنا
           </h2>
