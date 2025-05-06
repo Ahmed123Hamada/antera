@@ -39,7 +39,6 @@
 body {
   color: var(--text);
   background: var(--background);
-  font-family: "HomeScand", sans-serif;
 }
 
 @layer components {
