@@ -108,12 +108,12 @@ export default function Contact() {
   }, [titleControls, descriptionControls, contactInfoControls, formControls]);
 
   return (
-    <section className="py-24 px-6" style={{ backgroundColor: 'var(--section-bg)' }}>
+    <section className="py-24 px-6" style={{ backgroundColor: 'var(--section-bg)', }}>
       <div className="max-w-6xl mx-auto">
         <motion.div ref={titleRef} initial={animationVariants.initial} animate={titleControls}>
           <h2
             className="text-4xl sm:text-5xl text-center mb-12 font-bold tracking-tight"
-            style={{ color: 'var(--primary)' }}
+            style={{ color: 'var(--primary)',fontFamily: 'Home' }}
           >
             تواصل معنا
           </h2>
@@ -126,7 +126,7 @@ export default function Contact() {
         >
           <p
             className="text-lg text-center max-w-3xl mx-auto mb-16 leading-relaxed"
-            style={{ color: 'var(--text)' }}
+            style={{ color: 'var(--text)',fontFamily: 'Home' }}
           >
             نحن هنا لمساعدتك في تنظيم مناسبتك الخاصة. تواصل معنا للحصول على مزيد من المعلومات
           </p>
@@ -141,7 +141,7 @@ export default function Contact() {
             className="p-8 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl"
             style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)' }}
           >
-            <h3 className="text-2xl font-bold mb-8" style={{ color: 'var(--primary)' }}>
+            <h3 className="text-2xl font-bold mb-8" style={{ color: 'var(--primary)',fontFamily: 'Home' }}>
               معلومات التواصل
             </h3>
             <div className="space-y-6">
@@ -184,7 +184,7 @@ export default function Contact() {
 
               <span
                 className="text-lg font-semibold py-2 px-4 rounded-full inline-block mb-4"
-              style={{ color: 'var(--text)',backgroundColor: 'var(--primary)'  }}>تابعنا على وسائل التواصل الاجتماعي</span>
+              style={{ color: 'var(--text)',backgroundColor: 'var(--primary)',fontFamily: 'Home' }}>تابعنا على وسائل التواصل الاجتماعي</span>
 
                 <div className=" w-full flex flex-col items-start justify-center gap-4">
                   <a
@@ -233,7 +233,7 @@ export default function Contact() {
             className="p-8 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl"
             style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)' }}
           >
-            <h3 className="text-2xl font-bold mb-8" style={{ color: 'var(--primary)' }}>
+            <h3 className="text-2xl font-bold mb-8" style={{ color: 'var(--primary)',fontFamily: 'Home' }}>
               أرسل لنا رسالة
             </h3>
             <div className="space-y-6">
@@ -306,6 +306,9 @@ export default function Contact() {
                   backgroundColor: 'var(--primary)',
                   color: 'var(--background)',
                   border: 'none',
+                  cursor: isSubmitting ? 'not-allowed' : 'pointer',
+                  fontFamily: "HomeScandBold"
+
                 }}
               >
                 {isSubmitting ? 'جاري الإرسال...' : 'إرسال الرسالة'}

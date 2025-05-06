@@ -4,10 +4,10 @@ import { motion, useAnimation } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 import Header from './components/Header';
 import hero from './images/1.jpg';
-import gallery1 from './images/1.jpg';
-import gallery2 from './images/1.jpg';
+import gallery1 from './images/3.jpg';
+import gallery2 from './images/3.jpg';
 import gallery3 from './images/1.jpg';
-import gallery4 from './images/2.jpg';
+import gallery4 from './images/1.jpg';
 import Link from 'next/link';
 import Contact from './contact/page';
 
@@ -171,7 +171,9 @@ export default function Home() {
           animate={heroControls}
           className="relative z-10 text-center px-6 max-w-3xl mx-auto"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg"
+            style={{ fontFamily: "Home" }}
+          >
             أفراح شباب قبيلة عنزة  الرسمية
           </h1>
           <p className="text-xl md:text-3xl mb-10 font-light">
@@ -202,7 +204,7 @@ export default function Home() {
             animate={featuresTitleControls}
             className="text-center"
           >
-            <h2 className="text-4xl font-bold mb-6">مميزات أفراح شباب قبيلة عنزة  الرسمية</h2>
+            <h2 className="text-4xl font-bold mb-6" style={{ fontFamily: "Home" }}>مميزات أفراح شباب قبيلة عنزة  الرسمية</h2>
             <span className="block w-24 h-1 mx-auto my-4 bg-black"></span>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -229,62 +231,66 @@ export default function Home() {
       </section>
 
       {/* Gallery Preview */}
-      <div className="container mx-auto px-6 flex flex-col items-center py-24 gap-6">
+      <div className=" w-full  px-6 flex flex-col items-center  gap-6">
         <motion.h2
           ref={galleryTitleRef}
           initial={animationVariants.initial}
           animate={galleryTitleControls}
           className="text-4xl font-bold text-center mb-6"
-          style={{ color: 'var(--primary)' }}
+          style={{ color: 'var(--primary)', fontFamily: 'Home' }}
         >
           صور افراح شباب قبيلة عنزة الرسمية
         </motion.h2>
         <span className="block w-24 h-1 mx-auto my-4 bg-black"></span>
-        <div className="grid grid-cols-1 sm:grid-12 md:grid-cols- gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-12  ">
           {images.map((image, index) => (
             <motion.div
               key={index}
               ref={galleryRefs[index]}
               initial={animationVariants.initial}
               animate={galleryControls[index]}
+              className="w-full"
             >
-              <div className="flex flex-col sm:flex-row items-start gap-6">
-                {/* Wedding Details */}
-                <div
-                  className="w-full sm:w-1/2 p-12 flex flex-col gap-6 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl"
-                  style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)' }}
-                >
-                  <h3 className="text-2xl font-bold mb-4" style={{ color: 'var(--primary)' }}>
-                    فرح {image.groomName}
-                  </h3>
-                  <p className="text-lg mb-2" style={{ color: 'var(--text)' }}>
-                    <span className="font-semibold">التاريخ:</span> {image.date}
-                  </p>
-                  <p className="text-lg mb-2" style={{ color: 'var(--text)' }}>
-                    <span className="font-semibold">الوقت:</span> {image.time}
-                  </p>
-                  <p className="text-lg" style={{ color: 'var(--text)' }}>
-                    <span className="font-semibold">المدة:</span> {image.timeRange}
-                  </p>
-                </div>
-                {/* Image */}
-                <div className="relative w-full sm:w-1/2 h-80 rounded-2xl overflow-hidden group">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <button
-                      className="bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full hover:bg-white/30 transition-colors font-semibold"
-                      style={{ border: '1px solid var(--primary)' }}
-                      onClick={() => handleImageClick(image.src)}
-                    >
-                      عرض الصورة
-                    </button>
+                <div className="flex flex-col sm:flex-row items-start gap-6">
+                  {/* Wedding Details */}
+                  <div
+                    className="w-full sm:w-1/2 p-12 flex flex-col gap-6 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl"
+                    style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)' }}
+                  >
+                    <h3 className="text-2xl font-bold mb-4" style={{ color: 'var(--primary)', fontFamily: 'HomeScandBold' }}>
+                     <span
+                      className='text-[#7c7c7c] font-semibold'
+                     style={{fontFamily:"Home", }}> اسم المعرس {index + 1}:</span>
+                       {image.groomName}
+                    </h3>
+                    <p className="text-lg mb-2" style={{ color: 'var(--text)' }}>
+                      <span className="font-semibold">التاريخ:</span> {image.date}
+                    </p>
+                    <p className="text-lg mb-2" style={{ color: 'var(--text)' }}>
+                      <span className="font-semibold">الوقت:</span> {image.time}
+                    </p>
+                    <p className="text-lg" style={{ color: 'var(--text)' }}>
+                      <span className="font-semibold">المدة:</span> {image.timeRange}
+                    </p>
+                  </div>
+                  {/* Image */}
+                  <div className="relative w-full sm:w-1/2 h-80 flex items-center  rounded-2xl overflow-hidden group">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <button
+                        className="bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full hover:bg-white/30 transition-colors font-semibold"
+                        style={{ border: '1px solid var(--primary)' }}
+                      >
+                        عرض الصورة
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
             </motion.div>
           ))}
         </div>

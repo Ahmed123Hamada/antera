@@ -185,7 +185,7 @@ export default function Gallery() {
       <div className="pt-32 text-center px-6">
         <h1
           className="text-5xl md:text-6xl font-bold tracking-tight drop-shadow-lg"
-          style={{ color: 'var(--primary)' }}
+          style={{ color: 'var(--primary)' , fontFamily: 'HomeScandBold' }}
         >
           زفاف شباب قبيلة عنزة الرسمية
         </h1>
@@ -208,8 +208,11 @@ export default function Gallery() {
                     className="w-full sm:w-1/2 p-12 flex flex-col gap-6 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl"
                     style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)' }}
                   >
-                    <h3 className="text-2xl font-bold mb-4" style={{ color: 'var(--primary)' }}>
-                      فرح {image.groomName}
+                    <h3 className="text-2xl font-bold mb-4" style={{ color: 'var(--primary)', fontFamily: 'HomeScandBold' }}>
+                     <span
+                      className='text-[#7c7c7c] font-semibold'
+                     style={{fontFamily:"Home", }}> اسم المعرس {index + 1}:</span>
+                       {image.groomName}
                     </h3>
                     <p className="text-lg mb-2" style={{ color: 'var(--text)' }}>
                       <span className="font-semibold">التاريخ:</span> {image.date}

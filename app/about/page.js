@@ -3,7 +3,7 @@ import Header from '../components/Header';
 
 export default function About() {
   return (
-    <main className="min-h-screen" style={{ backgroundColor: 'var(--background)', color: 'var(--text)', fontFamily: 'Tajawal, Arial, Helvetica, sans-serif' }}>
+    <main className="min-h-screen" style={{ backgroundColor: 'var(--background)', color: 'var(--text)', fontFamily: 'HomeScandBold' }}>
       
       {/* Hero Section */}
       <section className="relative h-64 flex items-center justify-center" style={{ background: 'var(--gradient)' }}>
@@ -27,10 +27,10 @@ export default function About() {
           <div className="max-w-3xl mx-auto">
             <div className="mb-12">
               <h2 className="text-3xl font-bold mb-6" style={{ color: 'var(--gold)' }}>قاعة قبيلة عنزة</h2>
-              <p className="mb-4" style={{ color: '#7c7c7c' }}>
-                قاعة قبيلة عنترة هي وجهة العرسان الذين يبحثون عن مكان مميز لحفل زفافهم. نحن نقدم تجربة فريدة تجمع بين الأصالة والحداثة، مع الحفاظ على التقاليد العربية الأصيلة.
+              <p className="mb-4" style={{ color: '#7c7c7c' , fontSize: '1.125rem',fontFamily: 'Home'}}>
+                قاعة قبيلة عنزة هي وجهة العرسان الذين يبحثون عن مكان مميز لحفل زفافهم. نحن نقدم تجربة فريدة تجمع بين الأصالة والحداثة، مع الحفاظ على التقاليد العربية الأصيلة.
               </p>
-              <p style={{ color: '#7c7c7c' }}>
+              <p style={{ color: '#7c7c7c', fontSize: '1.125rem',fontFamily: 'Home'}}>
                 تتميز قاعتنا بتصميم عصري وأنيق، مع مساحات واسعة تتسع لأعداد كبيرة من الضيوف. نقدم خدمات متكاملة تشمل التصوير، الضيافة، والديكور، لنجعل من حفل زفافك ذكرى لا تنسى.
               </p>
             </div>
@@ -52,7 +52,8 @@ export default function About() {
 
             <div className="mb-12">
               <h3 className="text-2xl font-bold mb-6" style={{ color: 'var(--gold)' }}>مميزات القاعة</h3>
-              <ul className="space-y-4">
+              <ul className="space-y-4 "
+                style={{ color: '#7c7c7c', fontSize: '1.125rem', fontFamily: 'Home' }}>
                 <li className="flex items-start">
                   <span className="text-2xl mr-2" style={{ color: 'var(--gold)' }}>✓</span>
                   <span style={{ color: '#7c7c7c' }}>مساحة واسعة تتسع لأعداد كبيرة من الضيوف</span>
