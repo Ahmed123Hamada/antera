@@ -169,14 +169,16 @@ export default function Home() {
           ref={heroRef}
           initial={animationVariants.initial}
           animate={heroControls}
-          className="relative z-10 text-center px-6 max-w-3xl mx-auto"
+          className="relative z-10 text-center px-6 max-w-4xl mx-auto "
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg"
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg "
             style={{ fontFamily: "Home" }}
           >
             أفراح شباب قبيلة عنزة  الرسمية
           </h1>
-          <p className="text-xl md:text-3xl mb-10 font-light">
+          <p className="text-xl md:text-3xl mb-10 font-light"
+          
+            style={{ fontFamily: "Home" }}>
             المكان المثالي لحفل زفافك
           </p>
           <Link
