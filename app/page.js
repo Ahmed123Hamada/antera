@@ -240,14 +240,13 @@ export default function Home() {
           صور افراح شباب قبيلة عنترة الرسمية
         </motion.h2>
         <span className="block w-24 h-1 mx-auto my-4 bg-black"></span>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 sm:grid-12 md:grid-cols- gap-12">
           {images.map((image, index) => (
             <motion.div
               key={index}
               ref={galleryRefs[index]}
               initial={animationVariants.initial}
               animate={galleryControls[index]}
-              
             >
               <div className="flex flex-col sm:flex-row items-start gap-6">
                 {/* Wedding Details */}

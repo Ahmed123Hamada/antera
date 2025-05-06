@@ -194,7 +194,7 @@ export default function Gallery() {
       {/* Gallery Grid */}
       <section className="py-24" style={{ backgroundColor: 'var(--section-bg)' }}>
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-12">
             {currentImages.map((image, index) => (
               <motion.div
                 key={index}

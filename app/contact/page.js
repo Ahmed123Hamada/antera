@@ -177,41 +177,50 @@ export default function Contact() {
                   كل يوم من 9:00 صباحاً إلى 10:00 مساءً
                 </span>
               </div>
+              <span className="block w-12 h-1  bg-black"></span>
+
               {/* Social Media Links */}
-              <div className="flex items-center group">
-                <div className="ml-4 text-2xl flex space-x-4">
+              <div className="flex flex-col items-start gap-5 ">
+
+              <span
+                className="text-lg font-semibold py-2 px-4 rounded-full inline-block mb-4"
+              style={{ color: 'var(--text)',backgroundColor: 'var(--primary)'  }}>تابعنا على وسائل التواصل الاجتماعي</span>
+
+                <div className=" w-full flex flex-col items-start justify-center gap-4">
                   <a
                     href="https://facebook.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="transition-transform duration-300 group-hover:scale-110"
+                    className="transition-transform  group-hover:scale-110 flex gap-5 group duration-500 cursor-pointer"
                     style={{ color: 'var(--primary)' }}
                     aria-label="Facebook"
                   >
-                    <FaFacebookF />
+                    <FaFacebookF size={25} className='group-hover:text-blue-800 duration-500' /> 
+                    <span className="ml-2 text-2xl text-primary group-hover:text-blue-800  duration-500">فيسبوك</span>
                   </a>
                   <a
                     href="https://twitter.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="transition-transform duration-300 group-hover:scale-110"
+                    className="transition-transform duration-300 group-hover:scale-110 flex gap-5 group"
                     style={{ color: 'var(--primary)' }}
                     aria-label="Twitter"
                   >
-                    <FaTwitter />
+                    <FaTwitter size={25}  className='group-hover:text-blue-400 duration-500' />
+                    <span className="ml-2  text-primary text-2xl group-hover:text-blue-400 duration-500">تويتر</span>
                   </a>
                   <a
                     href="https://instagram.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="transition-transform duration-300 group-hover:scale-110"
+                    className="transition-transform duration-300 group-hover:scale-110 flex gap-5 group"
                     style={{ color: 'var(--primary)' }}
                     aria-label="Instagram"
                   >
-                    <FaInstagram />
+                    <FaInstagram size={25}   className='group-hover:text-red-500 duration-500' />
+                    <span className="ml-2 text-2xl  text-primary group-hover:text-red-500 duration-500">إنستغرام</span>
                   </a>
                 </div>
-                <span style={{ color: 'var(--text)' }}>تابعنا على وسائل التواصل الاجتماعي</span>
               </div>
             </div>
           </motion.div>
