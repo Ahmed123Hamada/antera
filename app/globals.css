@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --text: #2d1e2f; /* Primary dark color for text */
-  --background: #f5e6cc; /* Light secondary color for backgrounds */
-  --primary: #b3a632; /* Gold for primary accents */
-  --card-bg: #ffffff; /* White for cards, derived from secondary */
-  --section-bg: #f5e6cc; /* Same as background for sections */
-  --card-border: #e0d4b8; /* Subtle border derived from secondary */
+  --text: #f9ff84; /* Light gray for secondary text */
+  --background:rgb(26, 103, 148); /* Dark teal for background */
+  --primary: #B3A632; /* Gold for primary accents */
+  --card-bg: #515a686e; /* Slightly lighter teal for cards */
+  --section-bg: #1A2A44; /* Same as background for sections */
+  --card-border: #3A4D68; /* Subtle border derived from background */
 }
 
 @font-face {
@@ -22,19 +22,20 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "HomeScandBold";
   src: url("/Fonts/Khallab/FFKhallab-Regular.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: "HomeScandLight";
   src: url("/fonts/LateefroundedFont-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 
 body {
   color: var(--text);

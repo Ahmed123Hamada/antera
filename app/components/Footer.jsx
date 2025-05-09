@@ -38,17 +38,20 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-gray-900 text-white"
+    <footer className=" text-white"
+
       style={{
         fontFamily: 'HomeScandBold',
-
+        backgroundColor: 'var(--background)',
       }}
     >
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Social Links */}
           <div>
-            <h2 className="text-2xl font-bold text-primary mb-4"> شباب قبيلة عنزة الرسمية</h2>
+            <h2 className="text-2xl font-bold text-primary mb-4"
+              style={{ fontFamily: 'HomeScandBold', color: 'var(--primary)' }}
+            > شباب قبيلة عنزة الرسمية</h2>
             <p className="text-gray-400 mb-6">
               وجهتك المثالية للاحتفالات والمناسبات في جدة
             </p>

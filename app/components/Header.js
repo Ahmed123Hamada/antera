@@ -39,11 +39,11 @@ export default function Header() {
 
   return (
     <motion.header 
-      className="fixed w-full  bg-white/95 backdrop-blur-md z-50 shadow-sm transition-shadow duration-300 hover:shadow-md"
+      className="fixed w-full   z-50 shadow-sm transition-shadow duration-300 hover:shadow-md bg-gradient-to-b from-transparent to-black/70 backdrop-blur-sm"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      style={{ fontFamily: 'HomeScandBold' }}
+      style={{ fontFamily: 'HomeScandBold',backgroundColor: 'var(--background)'  }}
     >
       <nav className="container mx-auto px-6 py-5">
         <div className="flex justify-between items-center">
@@ -51,7 +51,7 @@ export default function Header() {
             <Link href="/" className="text-lg     tracking-tight" 
               style={{ fontFamily: 'HomeScandBold',  }}
             >
-              شباب قبيلة عنزة الرسمية
+              سناب قبيلة عنزة الرسمية
             </Link>
             <motion.span 
               className="text-2xl max-md:text-lg" 
@@ -73,7 +73,8 @@ export default function Header() {
               >
                 <Link 
                   href={item === 'الرئيسية' ? '/' : `/${item === 'من نحن' ? 'about' : item === 'زفاف القبيلة' ? 'gallery' : 'contact'}`}
-                  className="text-gray-800 hover:text-[var(--green)] transition-colors duration-200 font-bold text-lg"
+                  className=" hover:text-[var(--green)] transition-colors duration-200 font-bold text-lg"
+                  style={{ fontFamily: 'HomeScandBold', color: 'var(--primary)' }}
                 >
                   {item}
                 </Link>
@@ -83,7 +84,8 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <motion.button
-            className="md:hidden text-gray-800"
+            className="md:hidden "
+            style={{ color: 'var(--primary)' }}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             whileTap={{ scale: 0.9 }}
           >
@@ -132,7 +134,8 @@ export default function Header() {
                 >
                   <Link
                     href={item === 'الرئيسية' ? '/' : `/${item === 'من نحن' ? 'about' : item === 'افرحنا' ? 'gallery' : 'contact'}`}
-                    className="block text-gray-800 hover:text-[var(--green)] transition-colors duration-200 font-bold text-lg py-2 px-4 rounded-lg hover:bg-gray-100"
+                    className="block hover:text-[var(--green)] transition-colors duration-200 font-bold text-lg py-2 px-4 rounded-lg hover:bg-gray-100"
+                    style={{ fontFamily: 'HomeScandBold', color: 'var(--primary)' }}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item}

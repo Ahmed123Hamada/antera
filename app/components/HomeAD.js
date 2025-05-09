@@ -4,6 +4,8 @@ import { motion, useAnimation } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import mage11 from '..//images/1.jpg'; // Ensure this image is in the public/images folder
+import mage15 from '..//images/5.jpg'; // Ensure this image is in the public/images folder
+import mage4 from '..//images/4.jpg'; // Ensure this image is in the public/images folder
 import Image from 'next/image';
 function HomeAD() {
   const images = [
@@ -138,7 +140,7 @@ function HomeAD() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src={mage11} // Move hero image to public/images/
+            src={mage15} // Move hero image to public/images/
             alt="قاعة أفراح شباب قبيلة عنترة الرسمية"
             fill
             className="object-cover transform scale-110 transition-transform duration-1000 hover:scale-100"
@@ -146,27 +148,58 @@ function HomeAD() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 backdrop-blur-sm"></div>
         </div>
+        
         <motion.div
           ref={heroRef}
           initial={animationVariants.initial}
           animate={heroControls}
-          className="relative z-10 text-center px-6 max-w-4xl mx-auto"
+          className="relative z-10 text-center px-6 max-w-7xl mx-auto w-full flex justify-between items-center gap-6 max-md:flex-col max-md:gap-10 max-md:h-[70vh] "
         >
+          <div className="w-full " >
           <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg" style={{ fontFamily: 'Home' }}>
-            أفراح شباب قبيلة عنزة الرسمية
+            <div className="text-" style={{ fontFamily: 'Home',color: 'var(--section-bg)' }}>
+            رزمانة مناسبات
+              </div>
+              سناب قبيلة عنزة الرسمية  
           </h1>
           <p className="text-xl md:text-3xl mb-10 font-light" style={{ fontFamily: 'Home' }}>
             المكان المثالي لحفل زفافك
-          </p>
+          </p>      
           <Link
             href="/contact"
             className="inline-block px-10 py-4 text-black font-semibold rounded-full hover:bg-primary hover:-translate-y-0.5 transition-all duration-300 relative overflow-hidden group"
             style={{ backgroundColor: 'var(--primary)' }}
           >
-            <span className="relative z-10">احجز موعدك الآن</span>
+            <span className="relative z-10" >احجز موعدك الآن</span>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-600" />
-          </Link>
+          </Link>                
+          </div>
+
+
+      {/* Hidden SVG with clip path definition */}
+      <svg className="absolute -top-[999px] -left-[999px] w-0 h-0">
+        <defs>
+          <clipPath id="differentone24" clipPathUnits="objectBoundingBox">
+            <path
+              d="M0.773542 0.613333L1 0.5L0.773542 0.386667L0.853542 0.146458L0.613333 0.226458L0.5 0L0.386667 0.226458L0.146458 0.146458L0.226458 0.386667L0 0.5L0.226458 0.613333L0.146458 0.853542L0.386667 0.773542L0.5 1L0.613333 0.773542L0.853542 0.853542L0.773542 0.613333Z"
+              fill="black"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+      
+      {/* Image with clip path applied */}
+      <figure style={{ clipPath: 'url(#differentone24)' }} className="">
+        <Image
+          src={mage4}
+          alt="Description"
+          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+        />
+      </figure>
+
+
         </motion.div>
+
       </section>
 
       {/* Features Section */}
@@ -207,12 +240,12 @@ function HomeAD() {
       </section>
 
       {/* Gallery Preview */}
-      <div className=" w-full  px-6 flex flex-col items-center  gap-6">
+      <div className=" w-full  p-6 flex flex-col items-center  gap-6">
         <motion.h2
           ref={galleryTitleRef}
           initial={animationVariants.initial}
           animate={galleryTitleControls}
-          className="text-4xl font-bold text-center mb-6"
+          className="text-4xl font-bold text-center py-10"
           style={{ color: 'var(--primary)', fontFamily: 'Home' }}
         >
           صور افراح شباب قبيلة عنزة الرسمية
@@ -235,16 +268,14 @@ function HomeAD() {
                   >
                     <h3 className="text-2xl font-bold mb-4" style={{ color: 'var(--primary)', fontFamily: 'HomeScandBold' }}>
                      <span
-                      className='text-[#7c7c7c] font-semibold'
-                     style={{fontFamily:"Home", }}> اسم المعرس {index + 1}:</span>
-                       {image.groomName}
+                      className=' font-semibold'
+                     style={{fontFamily:"Home", color:"white"}}> اسم المعرس </span>
+                       <span className="font-semibold" style={{ color: 'var(--text)' }}> {index + 1}:{image.groomName}  </span>
                     </h3>
                     <p className="text-lg mb-2" style={{ color: 'var(--text)' }}>
                       <span className="font-semibold">التاريخ:</span> {image.date}
                     </p>
-                    <p className="text-lg mb-2" style={{ color: 'var(--text)' }}>
-                      <span className="font-semibold">الوقت:</span> {image.time}
-                    </p>
+
                     <p className="text-lg" style={{ color: 'var(--text)' }}>
                       <span className="font-semibold">المدة:</span> {image.timeRange}
                     </p>

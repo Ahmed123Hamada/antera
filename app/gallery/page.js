@@ -210,16 +210,14 @@ export default function Gallery() {
                   >
                     <h3 className="text-2xl font-bold mb-4" style={{ color: 'var(--primary)', fontFamily: 'HomeScandBold' }}>
                      <span
-                      className='text-[#7c7c7c] font-semibold'
-                     style={{fontFamily:"Home", }}> اسم المعرس {index + 1}:</span>
-                       {image.groomName}
+                      className='font-semibold'
+                     style={{fontFamily:"Home", color:"white"}}> اسم المعرس </span>
+                       {index + 1} - {image.groomName}
                     </h3>
                     <p className="text-lg mb-2" style={{ color: 'var(--text)' }}>
                       <span className="font-semibold">التاريخ:</span> {image.date}
                     </p>
-                    <p className="text-lg mb-2" style={{ color: 'var(--text)' }}>
-                      <span className="font-semibold">الوقت:</span> {image.time}
-                    </p>
+
                     <p className="text-lg" style={{ color: 'var(--text)' }}>
                       <span className="font-semibold">المدة:</span> {image.timeRange}
                     </p>

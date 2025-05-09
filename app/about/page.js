@@ -3,10 +3,10 @@ import Header from '../components/Header';
 
 export default function About() {
   return (
-    <main className="min-h-screen" style={{ backgroundColor: 'var(--background)', color: 'var(--text)', fontFamily: 'HomeScandBold' }}>
+    <main className="min-h-screen" style={{ backgroundColor: 'var(--bgsection-bg)', color: 'var(--text)', fontFamily: 'HomeScandBold' }}>
       
       {/* Hero Section */}
-      <section className="relative h-64 flex items-center justify-center" style={{ background: 'var(--gradient)' }}>
+      <section className="relative h-64 flex items-center justify-center" style={{ background: 'var(--section-bg)' }}>
         <div className="absolute inset-0 z-0">
           <Image
             src="/hero.jpg"
@@ -14,7 +14,7 @@ export default function About() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-white/60" style={{ background: 'linear-gradient(135deg, #fbf4f6 0%, #fcd47d 100%)', opacity: 0.85 }}></div>
+          <div className="absolute inset-0 bg-white/60" style={{ background: 'var(--section-bg)', opacity: 0.85 }}></div>
         </div>
         <div className="relative z-10 text-center">
           <h1 className="text-4xl font-bold" style={{ color: 'var(--gold)' }}>عن القاعة</h1>
@@ -22,7 +22,7 @@ export default function About() {
       </section>
 
       {/* About Content */}
-      <section className="py-20" style={{ background: '#f7f5f2' }}>
+      <section className="py-20" style={{ background: '#1A2A44' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="mb-12">
@@ -36,13 +36,16 @@ export default function About() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className=" p-6 rounded-lg shadow-md"
+                style={{ background: 'var(--card-border)' }}>
                 <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--gold)' }}>رؤيتنا</h3>
                 <p style={{ color: '#7c7c7c' }}>
                   أن نكون الوجهة الأولى للعرسان في المنطقة، من خلال تقديم تجربة فريدة ومميزة لحفل الزفاف.
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="p-6 rounded-lg shadow-md"
+                style={{ background: 'var(--card-border)' }}
+               >
                 <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--gold)' }}>رسالتنا</h3>
                 <p style={{ color: '#7c7c7c' }}>
                   تقديم خدمات عالية الجودة مع الحفاظ على التقاليد العربية، وخلق ذكريات جميلة تدوم مدى الحياة.

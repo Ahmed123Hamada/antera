@@ -184,7 +184,7 @@ export default function Contact() {
 
               <span
                 className="text-lg font-semibold py-2 px-4 rounded-full inline-block mb-4"
-              style={{ color: 'var(--text)',backgroundColor: 'var(--primary)',fontFamily: 'Home' }}>تابعنا على وسائل التواصل الاجتماعي</span>
+              style={{ color: 'white',backgroundColor: 'var(--card-border)',fontFamily: 'HomeScand' }}>تابعنا على وسائل التواصل الاجتماعي</span>
 
                 <div className=" w-full flex flex-col items-start justify-center gap-4">
                   <a
