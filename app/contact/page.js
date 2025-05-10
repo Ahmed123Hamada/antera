@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaSnapchatGhost, FaWhatsapp } from 'react-icons/fa';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -186,20 +186,21 @@ export default function Contact() {
                 className="text-lg font-semibold py-2 px-4 rounded-full inline-block mb-4"
               style={{ color: 'white',backgroundColor: 'var(--card-border)',fontFamily: 'HomeScand' }}>تابعنا على وسائل التواصل الاجتماعي</span>
 
-                <div className=" w-full flex flex-col items-start justify-center gap-4">
+                <div className=" w-full grid grid-cols-1 gap-4 items-center justify-center">
+   whatsapp
                   <a
-                    href="https://facebook.com"
+                    href= 'https://wa.me/96597338883'
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="transition-transform  group-hover:scale-110 flex gap-5 group duration-500 cursor-pointer"
+                    className="transition-transform duration-300 group-hover:scale-110 flex gap-5 group"
                     style={{ color: 'var(--primary)' }}
-                    aria-label="Facebook"
+                    aria-label="WhatsApp"
                   >
-                    <FaFacebookF size={25} className='group-hover:text-blue-800 duration-500' /> 
-                    <span className="ml-2 text-2xl text-primary group-hover:text-blue-800  duration-500">فيسبوك</span>
+                    <FaWhatsapp size={25}  className='group-hover:text-green-500 duration-500' />
+                    <span className="ml-2 text-2xl  text-primary group-hover:text-green-500 duration-500">واتساب</span>
                   </a>
                   <a
-                    href="https://twitter.com"
+                    href="https://x.com/3nza_news?s=21&t=FhpmWqDeRqG4x7gdsNW4YQ"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="transition-transform duration-300 group-hover:scale-110 flex gap-5 group"
@@ -210,7 +211,7 @@ export default function Contact() {
                     <span className="ml-2  text-primary text-2xl group-hover:text-blue-400 duration-500">تويتر</span>
                   </a>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/3nza_newss?igsh=MWNtNXFuMHF3MXNobg%3D%3D&utm_source=qr"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="transition-transform duration-300 group-hover:scale-110 flex gap-5 group"
@@ -220,7 +221,30 @@ export default function Contact() {
                     <FaInstagram size={25}   className='group-hover:text-red-500 duration-500' />
                     <span className="ml-2 text-2xl  text-primary group-hover:text-red-500 duration-500">إنستغرام</span>
                   </a>
+                  <a
+                    href="https://youtube.com/@3nza_news?si=pu0NCLUh4NIG-84-"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-transform duration-300 group-hover:scale-110 flex gap-5 group"
+                    style={{ color: 'var(--primary)' }}
+                    aria-label="Youtube"
+                  >
+                    <FaYoutube size={25}   className='group-hover:text-red-500 duration-500' />
+                    <span className="ml-2 text-2xl  text-primary group-hover:text-red-500 duration-500">يوتيوب</span>
+                  </a>
+                  <a
+                    href="https://snapchat.com/t/49My8Ljg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-transform duration-300 group-hover:scale-110 flex gap-5 group"
+                    style={{ color: 'var(--primary)' }}
+                    aria-label="Snapchat"
+                  >
+                    <FaSnapchatGhost size={25}   className='group-hover:text-yellow-500 duration-500' />
+                    <span className="ml-2 text-2xl  text-primary group-hover:text-yellow-300 duration-500">سناب شات</span>
+                  </a>
                 </div>
+                <span className="block w-12 h-1  bg-black"></span>
               </div>
             </div>
           </motion.div>

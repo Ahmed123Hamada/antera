@@ -1,12 +1,13 @@
-import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa'
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaSnapchatGhost, FaWhatsapp } from 'react-icons/fa'
 
 const Footer = () => {
-  const socialLinks = [
-    { icon: <FaFacebook className="w-6 h-6" />, url: '#' },
-    { icon: <FaTwitter className="w-6 h-6" />, url: '#' },
-    { icon: <FaInstagram className="w-6 h-6" />, url: '#' },
-    { icon: <FaYoutube className="w-6 h-6" />, url: '#' },
-  ]
+const socialLinks = [
+{ icon: <FaWhatsapp className="w-6 h-6" />, url: 'https://wa.me/96597338883' },
+    { icon: <FaTwitter className="w-6 h-6" />, url: 'https://x.com/3nza_news?s=21&t=FhpmWqDeRqG4x7gdsNW4YQ' },
+    { icon: <FaInstagram className="w-6 h-6" />, url: 'https://www.instagram.com/3nza_newss?igsh=MWNtNXFuMHF3MXNobg%3D%3D&utm_source=qr' },
+    { icon: <FaYoutube className="w-6 h-6" />, url: 'https://youtube.com/@3nza_news?si=pu0NCLUh4NIG-84-' },
+    { icon: <FaSnapchatGhost className="w-6 h-6" />, url: 'https://snapchat.com/t/49My8Ljg' },
+]
 
   const footerLinks = [
     {
@@ -30,9 +31,9 @@ const Footer = () => {
     {
       title: 'معلومات الاتصال',
       links: [
-        { name: 'الهاتف: +966 12 345 6789', url: 'tel:+966123456789' },
-        { name: 'البريد الإلكتروني: info@qabeela-antara.com', url: 'mailto:info@qabeela-antara.com' },
-        { name: 'العنوان: شارع الملك فهد، جدة', url: '#' },
+        { name: 'الهاتف: +96597338883', url: 'tel:+96597338883' },
+        // { name: 'البريد الإلكتروني: info@qabeela-antara.com', url: 'mailto:info@qabeela-antara.com' },
+        // { name: 'العنوان: شارع الملك فهد، جدة', url: '#' },
       ],
     },
   ]

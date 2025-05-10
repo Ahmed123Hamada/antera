@@ -2,10 +2,17 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 import Link from 'next/link';
 import mage11 from '..//images/1.jpg'; // Ensure this image is in the public/images folder
 import mage15 from '..//images/5.jpg'; // Ensure this image is in the public/images folder
 import mage4 from '..//images/4.jpg'; // Ensure this image is in the public/images folder
+import ads from '..//images/ads.jpg'; // Ensure this image is in the public/images folder
 import Image from 'next/image';
 function HomeAD() {
   const images = [
@@ -40,6 +47,40 @@ function HomeAD() {
       date: '2025-09-05',
       time: '7:30 م',
       timeRange: 'من 7:30 م إلى 12:30 ص',
+    },
+  ];
+  const Ads = [
+    {
+      src: ads,
+      alt: 'صورة 1',
+    },
+    {
+      src: ads,
+      alt: 'صورة 2',
+    },
+    {
+      src: ads,
+      alt: 'صورة 3',
+    },
+    {
+      src: ads,
+      alt: 'صورة 4',
+    },
+    {
+      src: ads,
+      alt: 'صورة 5',
+    },
+    {
+      src: ads,
+      alt: 'صورة 6',
+    },
+    {
+      src: ads,
+      alt: 'صورة 7',
+    },
+    {
+      src: ads,
+      alt: 'صورة 8',
     },
   ];
 
@@ -200,6 +241,59 @@ function HomeAD() {
 
         </motion.div>
 
+      </section>
+            {/* Swiper Section for Wedding Announcements */}
+      <section className="py-16" style={{ backgroundColor: 'var(--section-bg)' }}>
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-10" style={{ color: 'var(--primary)', fontFamily: 'Home' }}>
+            إعلانات الأفراح القادمة
+          </h2>
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            className="mySwiper"
+          >
+            {Ads.map((image, index) => (
+              <SwiperSlide key={index}>
+                <div
+                  className="p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl"
+                  style={{ backgroundColor: 'var(--card-bg)', border: '1px solid var(--card-border)' }}
+                >
+                  <div className="relative w-full h-64 rounded-2xl overflow-hidden mb-4">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-cover transition-transform duration-500 hover:scale-110"
+                      priority
+                    />
+                  </div>
+                  {/* <h3 className="text-xl font-bold mb-2" style={{ color: 'var(--primary)', fontFamily: 'HomeScandBold' }}>
+                    <span className="font-semibold" style={{ fontFamily: 'Home', color: 'white' }}>
+                      اسم المعرس:
+                    </span>{' '}
+                    {image.groomName}
+                  </h3>
+                  <p className="text-lg mb-1" style={{ color: 'var(--text)' }}>
+                    <span className="font-semibold">التاريخ:</span> {image.date}
+                  </p>
+                  <p className="text-lg" style={{ color: 'var(--text)' }}>
+                    <span className="font-semibold">المدة:</span> {image.timeRange}
+                  </p> */}
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </section>
 
       {/* Features Section */}
