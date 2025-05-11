@@ -65,7 +65,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-10">
-            {['الرئيسية', 'من نحن', 'زفاف القبيلة', 'اتصل بنا'].map((item, index) => (
+            {['الرئيسية', 'نبذة عن القبيلة ', 'زفاف القبيلة', 'اتصل بنا'].map((item, index) => (
               <motion.div
                 key={item}
                 whileHover={{ scale: 1.05 }}
@@ -124,7 +124,7 @@ export default function Header() {
               animate="open"
               exit="closed"
             >
-              {['الرئيسية', 'من نحن', 'افرحنا', 'اتصل بنا'].map((item, index) => (
+              {['الرئيسية', ' نبذة عن القبيلة', 'زفاف القبيلة', 'اتصل بنا'].map((item, index) => (
                 <motion.div
                   key={item}
                   variants={linkVariants}
@@ -133,7 +133,7 @@ export default function Header() {
                   transition={{ delay: index * 0.1 }}
                 >
                   <Link
-                    href={item === 'الرئيسية' ? '/' : `/${item === 'من نحن' ? 'about' : item === 'افرحنا' ? 'gallery' : 'contact'}`}
+                    href={item === 'الرئيسية' ? '/' : `/${item === ' نبذة عن القبيلة' ? 'about' : item === 'زفاف القبيلة' ? 'gallery' : 'contact'}`}
                     className="block hover:text-[var(--green)] transition-colors duration-200 font-bold text-lg py-2 px-4 rounded-lg hover:bg-gray-100"
                     style={{ fontFamily: 'HomeScandBold', color: 'var(--primary)' }}
                     onClick={() => setIsMenuOpen(false)}

@@ -2,7 +2,7 @@
 
 :root {
   --text: #f9ff84; /* Light gray for secondary text */
-  --background:rgb(26, 103, 148); /* Dark teal for background */
+  --background:#1A2A44; /* Dark teal for background */
   --primary: #B3A632; /* Gold for primary accents */
   --card-bg: #515a686e; /* Slightly lighter teal for cards */
   --section-bg: #1A2A44; /* Same as background for sections */

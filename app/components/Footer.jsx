@@ -39,7 +39,7 @@ const socialLinks = [
   ]
 
   return (
-    <footer className=" text-white"
+    <footer className=" text-white border-t border-white mt-12 pt-8"
 
       style={{
         fontFamily: 'HomeScandBold',

@@ -21,8 +21,7 @@ function HomeAD() {
       alt: 'صورة 1',
       groomName: 'محمد أحمد',
       date: '2025-06-15',
-      time: '7:00 م',
-      timeRange: 'من 7:00 م إلى 12:00 ص',
+      location: 'جدة',
     },
     {
       src: mage11,
@@ -30,15 +29,14 @@ function HomeAD() {
       groomName: 'خالد عبدالله',
       date: '2025-07-20',
       time: '6:30 م',
-      timeRange: 'من 6:30 م إلى 11:30 م',
+      location: 'الرياض',
     },
     {
       src: mage11,
       alt: 'صورة 3',
       groomName: 'عمر سعيد',
       date: '2025-08-10',
-      time: '8:00 م',
-      timeRange: 'من 8:00 م إلى 1:00 ص',
+      location: 'الدمام',
     },
     {
       src: mage11,
@@ -46,7 +44,7 @@ function HomeAD() {
       groomName: 'يوسف محمود',
       date: '2025-09-05',
       time: '7:30 م',
-      timeRange: 'من 7:30 م إلى 12:30 ص',
+      location: 'المدينة المنورة',
     },
   ];
   const Ads = [
@@ -245,8 +243,8 @@ function HomeAD() {
             {/* Swiper Section for Wedding Announcements */}
       <section className="py-16" style={{ backgroundColor: 'var(--section-bg)' }}>
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-10" style={{ color: 'var(--primary)', fontFamily: 'Home' }}>
-            إعلانات الأفراح القادمة
+          <h2 className="text-4xl font-bold text-center mb-10" style={{ color: 'var(--primary)', fontFamily: 'HomeScandBold' }}>
+            إعلانات  تجارية
           </h2>
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
@@ -371,7 +369,7 @@ function HomeAD() {
                     </p>
 
                     <p className="text-lg" style={{ color: 'var(--text)' }}>
-                      <span className="font-semibold">المدة:</span> {image.timeRange}
+                      <span className="font-semibold">العنوان:</span> {image.location}
                     </p>
                   </div>
                   {/* Image */}
