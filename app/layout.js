@@ -5,11 +5,11 @@ import Header from './components/Header';
 export const metadata = {
   title: 'أسناب قبيلة عنزة _الرسمية',
   icons: {
-    icon: '/logo.icon',
-    web: '/logo.icon',
+    icon: '/4.icon',
+    web: '/4.icon',
      // String path to favicon
-    shortcut: '/logo.icon', // String path for shortcut icon
-    apple: '/logo.icon', // String path for Apple Touch icon
+    shortcut: '/4.icon', // String path for shortcut icon
+    apple: '/4.icon', // String path for Apple Touch icon
   },
   description: 'أسناب قبيلة عنزة الرسمية',
   keywords: 'قبيلة عنزة, سناب شات, عنزة, سناب قبيلة عنزة, سناب شات عنزة, سناب شات الرسمي, سناب شات الرسمي لقبيلة عنزة',
