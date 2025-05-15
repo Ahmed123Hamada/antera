@@ -1,5 +1,5 @@
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaSnapchatGhost, FaWhatsapp } from 'react-icons/fa'
-
+import logo from '../images/logo.png'
 const Footer = () => {
 const socialLinks = [
 { icon: <FaWhatsapp className="w-6 h-6" />, url: 'https://wa.me/96597338883' },
@@ -39,11 +39,12 @@ const socialLinks = [
   ]
 
   return (
-    <footer className=" text-white border-t border-white mt-12 pt-8"
+    <footer className=" border-t border-white  "
 
       style={{
         fontFamily: 'HomeScandBold',
-        backgroundColor: 'var(--background)',
+        backgroundColor: 'var(--gold) ',
+        color: 'var(--text)',
       }}
     >
       <div className="container mx-auto px-4 py-12">
@@ -51,9 +52,9 @@ const socialLinks = [
           {/* Logo and Social Links */}
           <div>
             <h2 className="text-2xl font-bold text-primary mb-4"
-              style={{ fontFamily: 'HomeScandBold', color: 'var(--primary)' }}
+              style={{ fontFamily: 'HomeScandBold', color: 'var(--text)' }}
             > شباب قبيلة عنزة الرسمية</h2>
-            <p className="text-gray-400 mb-6">
+            <p className="mb-6">
               وجهتك المثالية للاحتفالات والمناسبات في جدة
             </p>
             <div className="flex space-x-4">
@@ -61,7 +62,7 @@ const socialLinks = [
                 <a
                   key={index}
                   href={link.url}
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className=" hover:text-primary transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -80,7 +81,7 @@ const socialLinks = [
                   <li key={linkIndex}>
                     <a
                       href={link.url}
-                      className="text-gray-400 hover:text-primary transition-colors"
+                      className=" hover:text-primary transition-colors"
                     >
                       {link.name}
                     </a>
@@ -92,7 +93,7 @@ const socialLinks = [
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        <div className="border-t border-gray-800 mt-12 pt-8 text-center ">
           <p>
             © {new Date().getFullYear()} قبيلة عنزة. جميع الحقوق محفوظة.
           </p>

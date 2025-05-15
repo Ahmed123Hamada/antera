@@ -195,7 +195,7 @@ export default function Gallery() {
                     <h3 className="text-2xl font-bold mb-4" style={{ color: 'var(--primary)', fontFamily: 'HomeScandBold' }}>
                      <span
                       className='font-semibold'
-                     style={{fontFamily:"Home", color:"white"}}> اسم المعرس </span>
+                     style={{fontFamily:"Home", color:"var(--text)"}}> اسم المعرس </span>
                        {index + 1} - {image.groomName}
                     </h3>
                     <p className="text-lg mb-2" style={{ color: 'var(--text)' }}>

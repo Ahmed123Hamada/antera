@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+:root { 
   --text: #f9ff84; /* Light gray for secondary text */
   --background:#1A2A44; /* Dark teal for background */
   --primary: #B3A632; /* Gold for primary accents */
@@ -9,9 +9,19 @@
   --card-border: #3A4D68; /* Subtle border derived from background */
 }
 
+:root {
+  --text: #2d3748;         /* رمادي كحلي ناعم للنصوص */
+  --background: #e6ecf2;    /* أزرق رمادي فاتح للخلفية العامة */
+  --primary: #c9b037;       /* ذهبي فاتح (أنيق) */
+  --card-bg: #f9fafb;       /* أبيض مائل للرمادي لراحة العين */
+  --section-bg: #dce3ea;    /* أزرق رمادي أفتح من الخلفية */
+  --card-border: #bcc6d4;
+  --gold: #f1e399;   /* رمادي أزرق هادئ للحدود */
+}
+
 @font-face {
   font-family: "HomeScand";
-  src: url("/fonts/scand.ttf") format("truetype");
+  src: url("/fonts/KOSans-Bold.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -24,8 +34,14 @@
 }
 
 @font-face {
-  font-family: "HomeScandBold";
+  font-family: "HomeScandBold2";
   src: url("/Fonts/Khallab/FFKhallab-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HomeScandBold";
+  src: url("/Fonts/KOSans-Bold.otf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
