@@ -1,4 +1,3 @@
-
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
@@ -37,19 +36,28 @@ export default function Header() {
     }
   };
 
+  // Define menu items with their corresponding routes
+  const menuItems = [
+    { name: 'الرئيسية', route: '/' },
+    { name: 'نبذة عن القبيلة', route: '/about' },
+    { name: 'رزنامة المناسبات', route: '/gallery' },
+    { name: 'اتصل بنا', route: '/contact' },
+    { name: 'الوفيات', route: '/obituaries' }
+  ];
+
   return (
     <motion.header 
-      className="fixed w-full   z-50 shadow-sm transition-shadow duration-300 hover:shadow-md from-transparent to-black/70 backdrop-blur-sm"
+      className="fixed w-full z-50 shadow-sm transition-shadow duration-300 hover:shadow-md from-transparent to-black/70 backdrop-blur-sm"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      style={{ fontFamily: 'HomeScand',backgroundColor: 'var(--background)'  }}
+      style={{ fontFamily: 'HomeScand', backgroundColor: 'var(--background)' }}
     >
       <nav className="container mx-auto px-6 py-5">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <Link href="/" className="text-lg     tracking-tight" 
-              style={{ fontFamily: 'HomeScandBold2',  }}
+            <Link href="/" className="text-lg tracking-tight" 
+              style={{ fontFamily: 'HomeScandBold2' }}
             >
               سناب قبيلة عنزة الرسمية
             </Link>
@@ -65,18 +73,18 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-10">
-            {['الرئيسية', 'نبذة عن القبيلة ', ' رزنامه المناسبات', 'اتصل بنا','الوفيات'].map((item, index) => (
+            {menuItems.map((item, index) => (
               <motion.div
-                key={item}
+                key={item.name}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Link 
-                  href={item === 'الرئيسية' ? '/' : `/${item === 'من نحن' ? 'about' : item === ' رزنامه المناسبات' ? 'gallery' : 'contact' }`}
-                  className=" hover:text-[var(--green)] transition-colors duration-200 font-bold text-lg"
+                  href={item.route}
+                  className="hover:text-[var(--green)] transition-colors duration-200 font-bold text-lg"
                   style={{ fontFamily: 'HomeScandBold', color: 'var(--primary)' }}
                 >
-                  {item}
+                  {item.name}
                 </Link>
               </motion.div>
             ))}
@@ -84,7 +92,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <motion.button
-            className="md:hidden "
+            className="md:hidden"
             style={{ color: 'var(--primary)' }}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             whileTap={{ scale: 0.9 }}
@@ -124,22 +132,21 @@ export default function Header() {
               animate="open"
               exit="closed"
             >
-              {['الرئيسية', ' نبذة عن القبيلة', ' رزمانه المناسبات', 'اتصل بنا','الوفيات'].map((item, index) => (
+              {menuItems.map((item, index) => (
                 <motion.div
-                  key={item}
+                  key={item.name}
                   variants={linkVariants}
                   initial="closed"
                   animate="open"
                   transition={{ delay: index * 0.1 }}
                 >
                   <Link
-                  
-                    href={item === 'الرئيسية' ? '/' : `/${item === ' نبذة عن القبيلة' ? 'about' : item === ' رزمانه المناسبات' ? 'gallery' : 'contact'}`}
+                    href={item.route}
                     className="block hover:text-[var(--green)] transition-colors duration-200 font-bold text-lg py-2 px-4 rounded-lg hover:bg-gray-100"
                     style={{ fontFamily: 'HomeScandBold', color: 'var(--primary)' }}
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    {item}
+                    {item.name}
                   </Link>
                 </motion.div>
               ))}

@@ -14,20 +14,20 @@ export default function About() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-white/60" style={{ background: 'var(--section-bg)', opacity: 0.85 }}></div>
+          <div className="absolute inset-0 " style={{ background: 'var(--section-bg)', }}></div>
         </div>
         <div className="relative z-10 text-center">
-          <h1 className="text-4xl font-bold" style={{ color: 'var(--gold)' }}>نبذة عن قبيلة عنزة</h1>
+          <h1 className="text-4xl font-bold" style={{ color: 'var(--primary)' }}>نبذة عن قبيلة عنزة</h1>
         </div>
       </section>
 
       {/* About Content */}
-      <section className="" style={{ background: '#1A2A44' }}>
+      <section className="" style={{ background: 'var(--section-bg)' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="mb-12">
-              <h2 className="text-3xl font-bold mb-6" style={{ color: 'var(--gold)' }}> قبيلة عنزة</h2>
-              <p className="mb-4" style={{ color: 'white' , fontSize: '1.125rem',fontFamily: 'Home'}}>
+              <h2 className="text-3xl font-bold mb-6" style={{ color: 'var(--primary)' }}> قبيلة عنزة</h2>
+              <p className="mb-4" style={{ color: 'var(--text)' , fontSize: '1.125rem',fontFamily: 'Home'}}>
 قبيلة عنزة هي قبيلة عربية عدنانية مسكنها نجد وشمال الحجاز وبادية الشام والعراق والكويت وشمال الجزيرة العربية، ومن هناك انتشرت إلى غيرها من المناطق، منها ليبيا والأهواز وسيناء وتركيا. وتُعدّ عنزة من أكبر القبائل في الخليج والشام.
               </p>
 
@@ -36,7 +36,7 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div className=" p-6 rounded-lg shadow-md"
                 style={{ background: 'var(--card-border)' }}>
-                <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--gold)' }}>رؤيتنا</h3>
+                <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--primary)' }}>رؤيتنا</h3>
                 <p className='text-white'>
                   أن نكون الوجهة الأولى للعرسان في المنطقة، من خلال تقديم تجربة فريدة ومميزة لحفل الزفاف.
                 </p>
@@ -44,7 +44,7 @@ export default function About() {
               <div className="p-6 rounded-lg shadow-md"
                 style={{ background: 'var(--card-border)' }}
                >
-                <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--gold)' }}>رسالتنا</h3>
+                <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--primary)' }}>رسالتنا</h3>
                 <p className='text-white'>
                   تقديم خدمات عالية الجودة مع الحفاظ على التقاليد العربية، وخلق ذكريات جميلة تدوم مدى الحياة.
                 </p>
@@ -52,32 +52,32 @@ export default function About() {
             </div>
 
             <div className="mb-8">
-              <h3 className="text-2xl font-bold mb-6" style={{ color: 'var(--gold)' }}> مسكن قبيلة عنزة</h3>
+              <h3 className="text-2xl font-bold mb-6" style={{ color: 'var(--primary)' }}> مسكن قبيلة عنزة</h3>
               <ul className="space-y-4 "
                 style={{ color: 'white', fontSize: '1.125rem', fontFamily: 'Home' }}>
                 <li className="flex items-start">
-                  <span className="text-2xl mr-2" style={{ color: 'var(--gold)' }}>✓</span>
-                  <span style={{ color: 'white' }}>نجد </span>
+                  <span className="text-2xl mr-2" style={{ color: 'var(--primary)' }}>✓</span>
+                  <span style={{ color: 'var(--text)' }}>نجد </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-2xl mr-2" style={{ color: 'var(--gold)' }}>✓</span>
-                  <span style={{ color: 'white' }}> شمال الحجاز </span>
+                  <span className="text-2xl mr-2" style={{ color: 'var(--primary)' }}>✓</span>
+                  <span style={{ color: 'var(--text)' }}> شمال الحجاز </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-2xl mr-2" style={{ color: 'var(--gold)' }}>✓</span>
-                  <span style={{ color: 'white' }}>بادية الشام</span>
+                  <span className="text-2xl mr-2" style={{ color: 'var(--primary)' }}>✓</span>
+                  <span style={{ color: 'var(--text)' }}>بادية الشام</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-2xl mr-2" style={{ color: 'var(--gold)' }}>✓</span>
-                  <span style={{ color: 'white' }}> العراق  </span>
+                  <span className="text-2xl mr-2" style={{ color: 'var(--primary)' }}>✓</span>
+                  <span style={{ color: 'var(--text)' }}> العراق  </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-2xl mr-2" style={{ color: 'var(--gold)' }}>✓</span>
-                  <span style={{ color: 'white' }}> والكويت </span>
+                  <span className="text-2xl mr-2" style={{ color: 'var(--primary)' }}>✓</span>
+                  <span style={{ color: 'var(--text)' }}> والكويت </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-2xl mr-2" style={{ color: 'var(--gold)' }}>✓</span>
-                  <span style={{ color: 'white' }}>شمال الجزيرة العربية </span>
+                  <span className="text-2xl mr-2" style={{ color: 'var(--primary)' }}>✓</span>
+                  <span style={{ color: 'var(--text)' }}>شمال الجزيرة العربية </span>
                 </li>
               </ul>
             </div>
